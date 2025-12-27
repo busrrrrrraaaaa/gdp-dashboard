@@ -20,7 +20,7 @@ def not_kaydet(isim, mesaj, sus):
 # --- GÖRSEL ÜZERİNE NOT YAZMA (Pillow) ---
 def agaci_guncelle():
     # 'agac.jpg' adında bir resmin olduğunu varsayıyoruz, yoksa internetten bir tane indirelim
-    img = Image.open("agac.jpg") 
+    img = Image.open("agac.jng") 
     draw = ImageDraw.Draw(img)
     
     # Notları oku ve resmin üzerine rastgele yerleştir
@@ -31,7 +31,7 @@ def agaci_guncelle():
         metin = f"{row['Sus']} {row['İsim']}: {row['Not']}"
         draw.text((x, y), metin, fill="white") # Basit beyaz yazı
         
-    img.save("guncel_agac.jpg")
+    img.save("guncel_agac.jng")
 
 # --- ARAYÜZ ---
 st.title("🎄 İnteraktif Yılbaşı Ağacı")
