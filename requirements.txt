@@ -1,2 +1,2 @@
-streamlit
-pandas
+requirements.txt 
+streamlit, pandas, Pillow
